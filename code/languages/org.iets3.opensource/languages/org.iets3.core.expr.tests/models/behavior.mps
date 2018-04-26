@@ -92,6 +92,12 @@
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
         <child id="1153952416686" name="body" index="2GV8ay" />
@@ -2316,6 +2322,22 @@
         <node concept="3clFbF" id="ub9nkyPUMd" role="3cqZAp">
           <node concept="10Nm6u" id="ub9nkyPUMc" role="3clFbG" />
         </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="7lDeIdaL5pe" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getErrorMessageWithDetails" />
+      <node concept="17QB3L" id="7lDeIdaL5pf" role="3clF45" />
+      <node concept="3Tm1VV" id="7lDeIdaL5pg" role="1B3o_S" />
+      <node concept="3clFbS" id="7lDeIdaL5pi" role="3clF47">
+        <node concept="3clFbF" id="7lDeIdaL5$$" role="3cqZAp">
+          <node concept="1rXfSq" id="7lDeIdaL5$z" role="3clFbG">
+            <ref role="37wK5l" node="ub9nkyPUM2" resolve="getErrorMessage" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7lDeIdaL5pj" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>

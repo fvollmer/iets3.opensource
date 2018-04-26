@@ -258,7 +258,7 @@
                               <ref role="3cqZAo" node="3R3AIvunrHz" resolve="res" />
                             </node>
                             <node concept="liA8E" id="7eS2goy14J8" role="2OqNvi">
-                              <ref role="37wK5l" to="gdgh:5zG5$LyexiK" resolve="getErrorMessage" />
+                              <ref role="37wK5l" to="gdgh:7lDeIdaKXmT" resolve="getErrorMessageWithDetails" />
                             </node>
                           </node>
                         </node>

@@ -46,12 +46,16 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -152,6 +156,22 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4dD4xJJVafe" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="7lDeIdaLb_p" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getErrorMessageWithDetails" />
+      <node concept="17QB3L" id="7lDeIdaLb_q" role="3clF45" />
+      <node concept="3Tm1VV" id="7lDeIdaLb_r" role="1B3o_S" />
+      <node concept="3clFbS" id="7lDeIdaLb_u" role="3clF47">
+        <node concept="3clFbF" id="7lDeIdaLbPH" role="3cqZAp">
+          <node concept="1rXfSq" id="7lDeIdaLbPG" role="3clFbG">
+            <ref role="37wK5l" node="4dD4xJJVaf1" resolve="getErrorMessage" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7lDeIdaLb_v" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>

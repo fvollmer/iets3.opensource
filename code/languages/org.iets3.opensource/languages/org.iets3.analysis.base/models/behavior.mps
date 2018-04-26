@@ -171,6 +171,7 @@
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -1567,6 +1568,22 @@
     <node concept="3Tm1VV" id="5o3yvNxgKrr" role="1B3o_S" />
     <node concept="3uibUv" id="5o3yvNxgKsd" role="EKbjA">
       <ref role="3uigEE" to="gdgh:5zG5$Lyex1G" resolve="IResult" />
+    </node>
+    <node concept="3clFb_" id="7lDeIdaL55l" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getErrorMessageWithDetails" />
+      <node concept="17QB3L" id="7lDeIdaL55m" role="3clF45" />
+      <node concept="3Tm1VV" id="7lDeIdaL55n" role="1B3o_S" />
+      <node concept="3clFbS" id="7lDeIdaL55p" role="3clF47">
+        <node concept="3clFbF" id="7lDeIdaL5da" role="3cqZAp">
+          <node concept="1rXfSq" id="7lDeIdaL5d9" role="3clFbG">
+            <ref role="37wK5l" node="5o3yvNxgKsG" resolve="getErrorMessage" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7lDeIdaL55q" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="7QsdZDAwecP">
