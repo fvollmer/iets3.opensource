@@ -4,6 +4,7 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -41,6 +42,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -383,6 +385,9 @@
     <node concept="PrWs8" id="5IrXfgcUg9w" role="PzmwI">
       <ref role="PrY4T" node="aPhVmWYjmk" resolve="ICanBeLValue" />
     </node>
+    <node concept="PrWs8" id="74u6qanLBP4" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7NJy08a3O9a">
     <property role="TrG5h" value="IDotTarget" />
@@ -556,6 +561,7 @@
     <property role="34LRSv" value="opt" />
     <property role="3GE5qa" value="option" />
     <property role="EcuMT" value="2807135271607939856" />
+    <property role="R4oN_" value="Represents a optionally present value" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="1TJgyj" id="2rOWEwsEjch" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -690,9 +696,6 @@
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
     <node concept="PrWs8" id="5BNZGjBtUbM" role="PzmwI">
       <ref role="PrY4T" node="1Ez$z58LP6f" resolve="IAttemptType" />
-    </node>
-    <node concept="PrWs8" id="7rIKkhJfXLJ" role="PzmwI">
-      <ref role="PrY4T" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
     </node>
     <node concept="1TJgyj" id="12WRc28Xz6j" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1013,6 +1016,9 @@
     <node concept="PrWs8" id="ucawTXVgO4" role="PzmwI">
       <ref role="PrY4T" node="ucawTXUZmJ" resolve="IDeclarativelyInterpretable" />
     </node>
+    <node concept="PrWs8" id="1w6$bvvdsal" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
     <node concept="1TJgyi" id="SRvqsMUlki" role="1TKVEl">
       <property role="TrG5h" value="upperExcluding" />
       <property role="IQ2nx" value="1024425597317240082" />
@@ -1281,11 +1287,6 @@
     <property role="TrG5h" value="CheckTypeConstraintsExpr" />
     <property role="34LRSv" value="check" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyi" id="5OzSgxdWiIO" role="1TKVEl">
-      <property role="IQ2nx" value="6711455295495809972" />
-      <property role="TrG5h" value="failIfInvalid" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="PrWs8" id="4qVjx3kqEWM" role="PzmwI">
       <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
@@ -1302,6 +1303,11 @@
       <property role="20kJfa" value="tp" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyi" id="5OzSgxdWiIO" role="1TKVEl">
+      <property role="IQ2nx" value="6711455295495809972" />
+      <property role="TrG5h" value="failIfInvalid" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="78hTg1zmOHv">
@@ -1705,6 +1711,32 @@
     <property role="EcuMT" value="5227231181400542768" />
     <property role="TrG5h" value="INameQualifier" />
   </node>
+  <node concept="1TIwiD" id="2ufoZQIKHqp">
+    <property role="EcuMT" value="2850607030358693529" />
+    <property role="TrG5h" value="SimpleExpressionValueInspector" />
+    <ref role="1TJDcQ" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
+    <node concept="1TJgyi" id="6a3SqxOqxli" role="1TKVEl">
+      <property role="IQ2nx" value="7098765551289898322" />
+      <property role="TrG5h" value="onlyLast" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6a3SqxOtOxB" role="1TKVEl">
+      <property role="IQ2nx" value="7098765551290763367" />
+      <property role="TrG5h" value="showOnTop" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="1Hyq9Gjg5YG" role="1TKVEl">
+      <property role="IQ2nx" value="1973254601993904044" />
+      <property role="TrG5h" value="showOnConsole" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="1Hyq9GjK0Mo" role="1TKVEl">
+      <property role="IQ2nx" value="1973254602002271384" />
+      <property role="TrG5h" value="optionalLabel" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="2ufoZQIOV5b" role="lGtFl" />
+  </node>
   <node concept="PlHQZ" id="3QFQUsNJoM0">
     <property role="EcuMT" value="4443886968505207936" />
     <property role="3GE5qa" value="contract" />
@@ -1725,22 +1757,6 @@
     <property role="3GE5qa" value="contract" />
     <property role="TrG5h" value="IAssertConstraints" />
   </node>
-  <node concept="1TIwiD" id="2ufoZQIKHqp">
-    <property role="EcuMT" value="2850607030358693529" />
-    <property role="TrG5h" value="SimpleExpressionValueInspector" />
-    <ref role="1TJDcQ" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
-    <node concept="1TJgyi" id="6a3SqxOqxli" role="1TKVEl">
-      <property role="IQ2nx" value="7098765551289898322" />
-      <property role="TrG5h" value="onlyLast" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="6a3SqxOtOxB" role="1TKVEl">
-      <property role="IQ2nx" value="7098765551290763367" />
-      <property role="TrG5h" value="showOnTop" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="M6xJ_" id="2ufoZQIOV5b" role="lGtFl" />
-  </node>
   <node concept="1TIwiD" id="5a_u3OzTCvZ">
     <property role="EcuMT" value="5955298286257997823" />
     <property role="TrG5h" value="ColonCast" />
@@ -1759,6 +1775,32 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="1w6$bvvhW09" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
+    <node concept="PrWs8" id="1w6$bvvzANf" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
+    </node>
+    <node concept="PrWs8" id="1w6$bvvzANs" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
+    <node concept="PrWs8" id="1w6$bvvCL6b" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5bEkIpehgUq">
+    <property role="EcuMT" value="5974679004769488538" />
+    <property role="3GE5qa" value="error" />
+    <property role="TrG5h" value="SuccessExpression" />
+    <property role="34LRSv" value="success" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5bEkIpehgUx" role="1TKVEi">
+      <property role="IQ2ns" value="5974679004769488545" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>
