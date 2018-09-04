@@ -2,7 +2,7 @@
 <model ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="2" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
@@ -1927,16 +1927,32 @@
   <node concept="312cEu" id="2GQBRFCpFTQ">
     <property role="TrG5h" value="SolverTimeoutException" />
     <property role="3GE5qa" value="" />
-    <node concept="3Tm1VV" id="2GQBRFCpFTR" role="1B3o_S" />
-    <node concept="3uibUv" id="2GQBRFCpFTS" role="1zkMxy">
+    <node concept="3uibUv" id="5ajXTE5TPHi" role="1zkMxy">
       <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
     </node>
+    <node concept="3Tm1VV" id="2GQBRFCpFTR" role="1B3o_S" />
     <node concept="2tJIrI" id="2GQBRFCpFTT" role="jymVt" />
     <node concept="2tJIrI" id="2GQBRFCpFU0" role="jymVt" />
     <node concept="3clFbW" id="2GQBRFCpFU1" role="jymVt">
       <node concept="3cqZAl" id="2GQBRFCpFU2" role="3clF45" />
       <node concept="3Tm1VV" id="2GQBRFCpFU3" role="1B3o_S" />
       <node concept="3clFbS" id="2GQBRFCpFU4" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="5ajXTE5TQ9W" role="jymVt" />
+    <node concept="3clFb_" id="5ajXTE5TPOg" role="jymVt">
+      <property role="TrG5h" value="getMessage" />
+      <node concept="17QB3L" id="5ajXTE5TR2d" role="3clF45" />
+      <node concept="3Tm1VV" id="5ajXTE5TPOj" role="1B3o_S" />
+      <node concept="3clFbS" id="5ajXTE5TPOk" role="3clF47">
+        <node concept="3clFbF" id="5ajXTE5TRfb" role="3cqZAp">
+          <node concept="Xl_RD" id="5ajXTE5TRfa" role="3clFbG">
+            <property role="Xl_RC" value="The solver timeout exceeded. Please use the 'Set Timeout'-Intention to increase the timeout." />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5ajXTE5TPP5" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="2GQBRFCpFUp" role="jymVt" />
     <node concept="2tJIrI" id="2GQBRFCpFVR" role="jymVt" />
@@ -1962,9 +1978,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="3uibUv" id="mhgVwvXTVd" role="1zkMxy">
-      <ref role="3uigEE" to="juu2:mhgVwvXRXN" resolve="CheckingWasBlockedResult" />
-    </node>
     <node concept="2tJIrI" id="1bBNgGyK0u$" role="jymVt" />
     <node concept="3clFb_" id="1bBNgGyK06E" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -1981,6 +1994,9 @@
       <node concept="2AHcQZ" id="1bBNgGyK06L" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+    <node concept="3uibUv" id="mhgVwvXTVd" role="1zkMxy">
+      <ref role="3uigEE" to="juu2:mhgVwvXRXN" resolve="CheckingWasBlockedResult" />
     </node>
   </node>
 </model>
