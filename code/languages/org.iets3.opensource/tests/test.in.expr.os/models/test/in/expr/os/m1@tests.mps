@@ -4,9 +4,9 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base" version="0" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages" version="0" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
@@ -2158,7 +2158,7 @@
           <property role="1WP8_x" value="43" />
           <property role="1WP8_t" value="5" />
           <property role="1WP8_q" value="7" />
-          <ref role="1WP1uJ" to="700h:4bUWUHViF9" resolve="CounterExpr" />
+          <ref role="1WP1uJ" to="700h:4bUWUHViF9" resolve="IndexExpr" />
         </node>
       </node>
       <node concept="3pwbzX" id="GEat54Dy0D" role="3pwbzW">
@@ -4861,7 +4861,7 @@
         </node>
         <node concept="1bQR4M" id="6vzDuv8HVA4" role="3pwfKK">
           <property role="1bQOWy" value="Covered." />
-          <ref role="1bQReP" to="700h:4bUWUHViF9" resolve="CounterExpr" />
+          <ref role="1bQReP" to="700h:4bUWUHViF9" resolve="IndexExpr" />
         </node>
       </node>
       <node concept="3pwbzX" id="6vzDuv8HVDE" role="3pwbzW">
