@@ -121,6 +121,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
@@ -348,7 +349,22 @@
       </node>
       <node concept="3Tm1VV" id="2Qbt$1tTQmw" role="1B3o_S" />
     </node>
-    <node concept="2tJIrI" id="2Qbt$1tTQfG" role="jymVt" />
+    <node concept="2tJIrI" id="7pJa0htcn6r" role="jymVt" />
+    <node concept="2YIFZL" id="7pJa0htcpiR" role="jymVt">
+      <property role="TrG5h" value="invalidate_cache" />
+      <node concept="3clFbS" id="7pJa0htcoqz" role="3clF47">
+        <node concept="3clFbF" id="7pJa0htcpK4" role="3cqZAp">
+          <node concept="37vLTI" id="7pJa0htcq4j" role="3clFbG">
+            <node concept="10Nm6u" id="7pJa0htcqk7" role="37vLTx" />
+            <node concept="37vLTw" id="7pJa0htcpK3" role="37vLTJ">
+              <ref role="3cqZAo" node="2Qbt$1tTV1x" resolve="mapper" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7pJa0htcoTy" role="3clF45" />
+      <node concept="3Tm1VV" id="7pJa0htcnZQ" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="2Qbt$1tTQg5" role="jymVt" />
     <node concept="2YIFZL" id="2Qbt$1tTQco" role="jymVt">
       <property role="TrG5h" value="createBooleanType" />
